@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: #FBFFF1;
+  @media screen and (min-width:320px) and (max-width:768px) {
+    text-align: center;
+  }
+  animation: fade-in ease-in 1.5s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+a {
+  color: #cacaff;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.max-width {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.scale-on-hover {
+  transition-duration: .4s;
+  &:hover {
+    transform: scale(1.15);
+  }
 }

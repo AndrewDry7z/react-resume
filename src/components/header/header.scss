@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+
+    &-link {
+      text-align: right;
+
+      img {
+        width: 16px;
+      }
+    }
+
+    &-qr {
+      img {
+        width: 60px;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      margin: auto;
+    }
+
+  }
+
+  &__hello {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 520px;
+
+    h1 {
+      display: block;
+      text-shadow: 0 0 4px #424242;
+    }
+
+    img {
+      display: block;
+      width: 150px;
+      border-radius: 50%;
+      margin: auto;
+    }
+
+    @media screen and (max-width: 1024px) {
+
+      width: 100%;
+
+      h1, picture {
+        width: 100%;
+      }
+    }
+
+    padding: 40px 0;
+    position: relative;
+
+  }
+}
