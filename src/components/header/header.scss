@@ -56,8 +56,16 @@
       }
     }
 
-    padding: 40px 0;
+    padding: 40px 0 0;
     position: relative;
 
+  }
+
+  img[title="Under Construction"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(50deg);
+    width: 300px;
   }
 }

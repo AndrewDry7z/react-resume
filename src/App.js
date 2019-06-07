@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/header/header';
-import ContactInfo from './components/contact-info/contact-info'
+import ContactInfo from './components/contact-info/contact-info';
+import About from './components/about/about';
 import './variables.scss';
 import 'normalize.css';
 
@@ -10,8 +11,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ContactInfo />
+      <About />
       <WorkExperience />
+      <ContactInfo />
     </div>
   );
 }

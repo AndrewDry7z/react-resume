@@ -13,14 +13,10 @@ function Header() {
             </div>
 
             <div className={'header__info'}>
-                <div className="header__info-link">
-                    <p><Picture name={'homepage_icon'} type={'png'} alt={'Home Page Icon'}/> Portfolio</p>
-                    <p><a href="http://kolbasim.site/">http://kolbasim.site/</a></p>
-                </div>
-                <div className="header__info-qr">
-                    <Picture name={'qr-code'} type={'png'} alt={'Home Page Icon'}/>
-                </div>
+
             </div>
+
+            <Picture className={'under-construction'} name={'under-construction'} type={'png'} alt={'Under Construction'}/>
         </header>
     );
 }

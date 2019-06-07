@@ -5,7 +5,7 @@ function Picture({name, type, alt}) {
         <picture>
             <source type={'image/webp'} srcSet={`./files/images/${name}.webp`}/>
             <source type={`image/${type}`} srcSet={`./files/images/${name}.${type}`}/>
-            <img className={'scale-on-hover'} src={`/files/images/${name}.${type}`} alt={`${alt}`}/>
+            <img className={'scale-on-hover'} src={`/files/images/${name}.${type}`} alt={`${alt}`} title={`${alt}`}/>
         </picture>
     )
 }
