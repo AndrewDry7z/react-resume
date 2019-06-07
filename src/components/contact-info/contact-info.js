@@ -16,7 +16,7 @@ function ContactInfo() {
                     </div>
                     <div className="contacts-info__contacts--text">
                         <p><b>Telegram</b></p>
-                        <p><a rel={'nofollow'} target={'_blank'} href="https://tele.gg/andrewdry7z">@andrewdry7z</a></p>
+                        <p><a rel={'nofollow'} target={'_blank'} href="https://t.me/andrewdry7z">@andrewdry7z</a></p>
                     </div>
                 </div>
                 <div className="contacts-info__contacts-item">
@@ -49,9 +49,6 @@ function ContactInfo() {
                               href="//github.com/AndrewDry7z">AndrewDry7z</a></p>
                     </div>
                 </div>
-            </section>
-            <section>
-
             </section>
         </div>
     );

@@ -1,0 +1,71 @@
+.work-experience {
+  padding: 40px 0 0;
+
+  h2 {
+    text-align: center;
+  }
+
+  &-list {
+    padding: 40px 0;
+  }
+
+  &-item {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: baseline;
+    min-height: 140px;
+
+    &:last-child {
+      :after {
+        display: none;
+      }
+    }
+
+    &__job {
+      width: 30%;
+
+      &--position {
+        font-size: 1.5em;
+        font-weight: 600;
+        padding: 5px 0;
+      }
+
+      &--company {
+        font-size: 0.8em;
+      }
+    }
+
+    &__line {
+      width: 5%;
+      position: relative;
+
+      &--container {
+        position: absolute;
+        top: 0;
+        left: calc(50% - 17px);
+        width: 30px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 50%;
+
+        &:after {
+          content: '';
+          width: 2px;
+          height: 360%;
+          background: #fff;
+          position: absolute;
+          top: 30px;
+          left: calc(50% - 1px);
+          display: block;
+        }
+      }
+    }
+
+    &__description {
+      width: 45%;
+      line-height: 1.4;
+    }
+  }
+}
