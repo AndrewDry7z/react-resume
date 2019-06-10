@@ -67,5 +67,10 @@
     right: 20px;
     transform: rotate(50deg);
     width: 300px;
+    @media screen and (max-width: 768px) {
+      width: 180px;
+      top:0;
+      right:5px;
+    }
   }
 }

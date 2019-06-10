@@ -3,11 +3,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   &-techs {
     img {
       width: 64px;
       margin: 5px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
     }
   }
   &-text {

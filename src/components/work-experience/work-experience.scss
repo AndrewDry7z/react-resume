@@ -23,6 +23,12 @@
       }
     }
 
+    @media screen and (max-width: 480px) {
+      margin-top: 40px;
+      align-items: center;
+      width: 100%;
+    }
+
     &__job {
       width: 30%;
 
@@ -61,6 +67,11 @@
           display: block;
         }
       }
+
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+
     }
 
     &__description {
