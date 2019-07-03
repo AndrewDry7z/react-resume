@@ -1,8 +1,10 @@
 import React from 'react';
 import './header.scss';
-import Picture from '../../components/picture';
+import Picture from '../common/picture';
+import MessageModalInit from '../common/modal-message';
 
 function Header() {
+
     return (
         <header className={'header max-width'}>
             <div className={'header__hello'}>
@@ -13,7 +15,7 @@ function Header() {
             </div>
 
             <div className={'header__info'}>
-
+                <MessageModalInit isOpen={false}/>
             </div>
 
             <Picture className={'under-construction'} name={'under-construction'} type={'png'} alt={'Under Construction'}/>

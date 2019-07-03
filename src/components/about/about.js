@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.scss';
-import Picture from "../picture";
+import Picture from "../common/picture";
 
 function About() {
     return (

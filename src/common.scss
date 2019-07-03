@@ -1,0 +1,118 @@
+@import "variables";
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $main-background;
+  color: #FBFFF1;
+  @media screen and (min-width:320px) and (max-width:768px) {
+    text-align: center;
+  }
+  animation: fade-in ease-in 1.5s;
+}
+
+a {
+  color: #7297ff;
+}
+
+p {
+  margin: 5px 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.max-width {
+  max-width: 1150px;
+  margin: auto;
+  padding: 40px;
+}
+
+.scale-on-hover {
+  transition-duration: .4s;
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+
+.background {
+  &-lighter {
+    background-color: #323640;
+    border-radius: 2.5%;
+  }
+}
+
+.send-message-button {
+  background: #ffca40;
+  font-size: 22px;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.modal {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  top: calc(50% - 250px);
+  left: calc(50% - 300px);
+  background-color: $main-background;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  h2 {
+    text-align: center;
+  }
+
+  &-close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: red;
+    font-size: 40px;
+    cursor: pointer;
+
+    &:after {
+      content: '\00D7';
+    }
+  }
+
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(4, 4, 6, 0.75);
+
+  }
+
+  form {
+    input {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+    }
+    textarea {
+      width: 80%;
+      margin: 10px auto;
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+  }
+}
