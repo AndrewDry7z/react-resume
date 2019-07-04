@@ -114,5 +114,12 @@ h2 {
       border-radius: 5px;
       border: none;
     }
+    p {
+      text-align: center;
+      font-size: 28px;
+      &:first-child {
+        margin-top: 120px;
+      }
+    }
   }
 }

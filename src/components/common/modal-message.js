@@ -5,12 +5,15 @@ class ModalWindow extends React.Component {
     constructor() {
         super();
         this.state = {
-            showModal: false
-
+            showModal: false,
+            name: "",
+            email: "",
+            message: ""
         };
 
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleOpenModal() {
@@ -25,9 +28,31 @@ class ModalWindow extends React.Component {
         Modal.setAppElement('body');
     }
 
-    submitForm(event)  {
+    handleSubmit(event) {
         event.preventDefault();
-        alert('Coming soon!')
+
+        let payload = {
+            name: this.state.name,
+            email: this.state.email,
+            message: this.state.message
+        };
+
+        function sendData(url, data) {
+            let formData = new FormData();
+
+            for (let name in data) {
+                formData.append(name, data[name]);
+            }
+
+            fetch(url, {
+                method: 'POST',
+                body: formData
+            }).then(function () {
+               document.querySelector('.modal-body form').innerHTML = `<p>Thank you, ${payload.name}!</p><p>Your message has been successfully sent!</p>`;
+            });
+        }
+
+        sendData('/send_mail.php', payload)
     };
 
     render() {
@@ -44,14 +69,21 @@ class ModalWindow extends React.Component {
                     className="modal"
                     overlayClassName="modal-overlay"
                 >
-                    <p className={'modal-close'} onClick={this.handleCloseModal}> </p>
+                    <p className={'modal-close'} onClick={this.handleCloseModal}></p>
                     <div className="modal-body">
                         <h2>Contact me</h2>
-                        <form onSubmit={this.submitForm}>
-                            <input type="text" name="name" placeholder={'Your name'} required={'required'}/>
-                            <input type="email" name="email" placeholder={'Your e-mail'} required={'required'}/>
-                            <textarea name="message" cols="30" rows="10" placeholder={'Message text...'} required={'required'}></textarea>
-                            <button className={"send-message-button scale-on-hover"} type="submit">Submit message</button>
+                        <form onSubmit={this.handleSubmit}>
+                            <input type="text" name="name" placeholder={'Your name'} required={'required'}
+                                   value={this.state.name}
+                                   onChange={(event) => this.setState({name: event.target.value})}/>
+                            <input type="email" name="email" placeholder={'Your e-mail'} required={'required'}
+                                   value={this.state.email}
+                                   onChange={(event) => this.setState({email: event.target.value})}/>
+                            <textarea name="message" cols="30" rows="10" placeholder={'Message text...'}
+                                      required={'required'} value={this.state.message}
+                                      onChange={(event) => this.setState({message: event.target.value})}></textarea>
+                            <button className={"send-message-button scale-on-hover"} type="submit">Submit message
+                            </button>
                         </form>
                     </div>
                 </Modal>
