@@ -8,7 +8,7 @@ function Header() {
     return (
         <header className={'header max-width'}>
             <div className={'header__hello'}>
-                <Picture name={'photo'} type={'jpg'} alt={'Andrew Chufistov'}/>
+                <Picture className={'scale-on-hover'} name={'photo'} type={'jpg'} alt={'Andrew Chufistov'}/>
                 <h1>Hello! <br/>
                 I'm Andrew Chufistov, <br/>
                 Web Developer.</h1>

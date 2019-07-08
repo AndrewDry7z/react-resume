@@ -1,0 +1,61 @@
+.projects {
+  padding: 40px 20px;
+  &-item {
+    text-align: center;
+    display: inline-flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px;
+    margin: 20px 0;
+
+    p, a {
+      display: block;
+    }
+
+    &__name {
+      font-size: 1.2em;
+    }
+
+    &__image {
+      display: block;
+      margin: 10px auto;
+    }
+
+    &__description {
+      margin: auto 25px;
+    }
+
+    &__tech {
+      img {
+        max-width: 32px;
+        margin: auto 5px;
+      }
+    }
+  }
+
+  .tns {
+    &-controls {
+      button {
+        position: absolute;
+        height: 100%;
+        z-index: 10;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 32px;
+        text-shadow: -4px 0 8px #525252;
+        &[data-controls="prev"] {
+          left: -5px;
+        }
+        &[data-controls="next"] {
+          right: -5px;
+          text-shadow: 4px 0 8px #525252;
+        }
+      }
+    }
+    &-outer {
+      position: relative;
+    }
+
+  }
+}
