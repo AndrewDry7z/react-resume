@@ -1,0 +1,67 @@
+@mixin no-mobiles {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.educations {
+  &-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0;
+  }
+
+  &-item {
+    position: relative;
+    text-align: center;
+
+    &:first-child {
+      &:before {
+        content: " ";
+        height: 2px;
+        width: 160px;
+        background: #616161;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -180px;
+        @include no-mobiles;
+      }
+    }
+
+    &:last-child {
+      &:before {
+        content: " ";
+        height: 2px;
+        width: 160px;
+        background: #616161;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -180px;
+        @include no-mobiles;
+      }
+
+      &:after {
+        content: " ";
+        height: 2px;
+        width: 160px;
+        background: #616161;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -180px;
+        @include no-mobiles;
+      }
+    }
+
+    &__name {
+      font-weight: 600;
+    }
+
+    &__specialty, &__terms {
+      font-size: 1em;
+    }
+
+  }
+}

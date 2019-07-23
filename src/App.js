@@ -5,6 +5,7 @@ import About from './components/about/about';
 import 'normalize.css';
 import Projects from './components/projects/projects';
 import WorkExperience from "./components/work-experience/work-experience";
+import Educations from "./components/educations/educations";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <About/>
             <WorkExperience/>
             <Projects/>
+            <Educations/>
             <ContactInfo/>
         </div>
     );
