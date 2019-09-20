@@ -1,6 +1,7 @@
 import React from 'react';
 import './work-experience.scss';
 import WorkExperienceItem from "./work-experience-item";
+import MessageModalInit from "../common/modal-message";
 
 function WorkExperience() {
     return (
@@ -33,6 +34,12 @@ function WorkExperience() {
                         description={'Help Desk, Service Desk, LAN maintenance'}
                     />
 
+                </div>
+                <div className="work-experience-notice">
+                    <p className="work-experience-notice__text">
+                        Currently looking for job! If you have one:
+                    </p>
+                    <MessageModalInit isOpen={false}/>
                 </div>
             </section>
         </div>
