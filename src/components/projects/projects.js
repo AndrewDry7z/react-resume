@@ -42,6 +42,22 @@ function Projects() {
             <h2>My portfolio</h2>
             <TinySlider settings={sliderSettings}>
                 <div className="projects-item">
+                    <p className="projects-item__name">Dynamic Photo Gallery</p>
+                    <a href="/projects/mywed-demo/" rel={'nofollow'} target={'_blank'}>
+                        <Picture className={'projects-item__image'} name={'mywed-demo'} alt={'Photo Gallery'}
+                                 type={'jpg'}/>
+                    </a>
+                    <p className="projects-item__link">
+                        <a href="/projects/mywed-demo/" rel={'nofollow'} target={'_blank'}>mywed-demo</a>
+                    </p>
+                    <p className="projects-item__description">
+                        Dynamic photo gallery on Javascript ES6
+                    </p>
+                    <p className="projects-item__tech">
+                        <Picture className={''} name={'js_icon'} type={'png'} alt={'Wordpress'}/>
+                    </p>
+                </div>
+                <div className="projects-item">
                     <p className="projects-item__name">Legint</p>
                     <a href="//en.legint.com" rel={'nofollow'} target={'_blank'}>
                         <Picture className={'projects-item__image'} name={'legint.com-small'} alt={'Legint'}
