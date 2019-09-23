@@ -42,6 +42,23 @@ function Projects() {
             <h2>My portfolio</h2>
             <TinySlider settings={sliderSettings}>
                 <div className="projects-item">
+                    <p className="projects-item__name">Sales Generator LP</p>
+                    <a href="//sales-generator.ru/company" rel={'nofollow'} target={'_blank'}>
+                        <Picture className={'projects-item__image'} name={'sg-company'} alt={'SEO Agency LP'}
+                                 type={'jpg'}/>
+                    </a>
+                    <p className="projects-item__link">
+                        <a href="//sales-generator.ru/company" rel={'nofollow'} target={'_blank'}>sales-generator.ru/company</a>
+                    </p>
+                    <p className="projects-item__description">
+                       SEO and Internet Marketing agency landing page
+                    </p>
+                    <p className="projects-item__tech">
+                        <Picture classname={''} name={'sass_icon'} type={'png'} alt={'SCSS'}/>
+                        <Picture className={''} name={'html5_icon'} type={'png'} alt={'HTML5'}/>
+                    </p>
+                </div>
+                <div className="projects-item">
                     <p className="projects-item__name">Dynamic Photo Gallery</p>
                     <a href="/projects/mywed-demo/" rel={'nofollow'} target={'_blank'}>
                         <Picture className={'projects-item__image'} name={'mywed-demo'} alt={'Photo Gallery'}
@@ -54,7 +71,7 @@ function Projects() {
                         Dynamic photo gallery on Javascript ES6
                     </p>
                     <p className="projects-item__tech">
-                        <Picture className={''} name={'js_icon'} type={'png'} alt={'Wordpress'}/>
+                        <Picture className={''} name={'js_icon'} type={'png'} alt={'JS'}/>
                     </p>
                 </div>
                 <div className="projects-item">
