@@ -56,6 +56,7 @@ function Projects() {
                     <p className="projects-item__tech">
                         <Picture classname={''} name={'sass_icon'} type={'png'} alt={'SCSS'}/>
                         <Picture className={''} name={'html5_icon'} type={'png'} alt={'HTML5'}/>
+                        <Picture className={''} name={'js_icon'} type={'png'} alt={'JS'}/>
                     </p>
                 </div>
                 <div className="projects-item">
@@ -160,6 +161,24 @@ function Projects() {
                     <p className="projects-item__tech">
                         <Picture className={''} name={'html5_icon'} type={'png'} alt={'HTML5'}/>
                         <Picture className={''} name={'bootstrap_icon'} type={'png'} alt={'Bootstrap'}/>
+                    </p>
+                </div>
+                <div className="projects-item">
+                    <p className="projects-item__name">Nail files shop</p>
+                    <a href="//mirpilok.ru/" rel={'nofollow'} target={'_blank'}>
+                        <Picture className={'projects-item__image'} name={'mirpilok'} alt={'MirPilok Shop'}
+                                 type={'jpg'}/>
+                    </a>
+                    <p className="projects-item__link">
+                        <a href="//mirpilok.ru/" rel={'nofollow'} target={'_blank'}>mirpilok.ru</a>
+                    </p>
+                    <p className="projects-item__description">
+                        Wordpress (WooCommerce) online shop with own blog
+                    </p>
+                    <p className="projects-item__tech">
+                        <Picture className={''} name={'wordpress_icon'} type={'png'} alt={'Wordpress'}/>
+                        <Picture className={''} name={'sass_icon'} type={'png'} alt={'SCSS'}/>
+                        <Picture className={''} name={'js_icon'} type={'png'} alt={'JavaScript'}/>
                     </p>
                 </div>
                 <div className="projects-item">
