@@ -131,12 +131,12 @@ function Projects() {
                 </div>
                 <div className="projects-item">
                     <p className="projects-item__name">Personal Website</p>
-                    <a href="//kolbasim.site" rel={'nofollow'} target={'_blank'}>
+                    <a href="//achufistov.ru" rel={'nofollow'} target={'_blank'}>
                         <Picture className={'projects-item__image'} name={'kolbasim'} alt={'Personal Website'}
                                  type={'jpg'}/>
                     </a>
                     <p className="projects-item__link">
-                        <a href="//kolbasim.site" rel={'nofollow'} target={'_blank'}>kolbasim.site</a>
+                        <a href="//achufistov.ru" rel={'nofollow'} target={'_blank'}>kolbasim.site</a>
                     </p>
                     <p className="projects-item__description">
                         You're here now :)
