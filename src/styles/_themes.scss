@@ -1,0 +1,55 @@
+@import "variables";
+
+// It sucks that SCSS doesn't support interpolation in variable names!
+// Could be much easier and faster way to do what I'm doing here
+
+.theme-dark {
+  background: $dark-background;
+  color: $dark-text-color;
+
+  .themes-changer, .send-message-button {
+    background: $dark-button-background;
+    color: $dark-button-text-color;
+  }
+
+  .background-wrap {
+    background: $dark-wrapper-background;
+    color: $dark-wrapper-text-color;
+  }
+
+  .work-experience-item__line--container {
+    border-color: $dark-work-line-color;
+
+    &:after {
+      background: $dark-work-line-color;
+    }
+  }
+}
+
+.theme-light {
+  background: $light-background;
+  color: $light-text-color;
+
+  .themes-changer, .send-message-button {
+    background: $light-button-background;
+    color: $light-button-text-color;
+  }
+
+  .background-wrap {
+    background: $light-wrapper-background;
+    color: $light-wrapper-text-color;
+  }
+
+  .work-experience-item__line--container {
+    border-color: $light-work-line-color;
+
+    &:after {
+      background: $light-work-line-color;
+    }
+  }
+}
+
+.App {
+  transition-duration: .2s;
+  padding-bottom: 1px;
+}

@@ -3,7 +3,7 @@ import './educations.scss';
 
 function Educations() {
     return(
-        <div className="background-lighter">
+        <div className="background-wrap">
             <section className="educations max-width">
                 <h2>Educations</h2>
                 <div className="educations-list">

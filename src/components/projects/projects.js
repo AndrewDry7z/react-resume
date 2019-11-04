@@ -136,7 +136,7 @@ function Projects() {
                                  type={'jpg'}/>
                     </a>
                     <p className="projects-item__link">
-                        <a href="//achufistov.ru" rel={'nofollow'} target={'_blank'}>kolbasim.site</a>
+                        <a href="//achufistov.ru" rel={'nofollow'} target={'_blank'}>achufistov.ru</a>
                     </p>
                     <p className="projects-item__description">
                         You're here now :)

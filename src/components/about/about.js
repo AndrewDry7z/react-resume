@@ -5,12 +5,8 @@ import Picture from "../common/picture";
 function About() {
     return (
         <section className={'about max-width'}>
-            <h2>About me / Techs stack</h2>
+            <h2>Techs stack</h2>
             <div className="about-content">
-                <div className="about-text">
-                    <p>I <span role={'img'}>❤</span>️ everything about web and really enjoy what I do!</p>
-                    <p>Currently I aspire to the title of "Full Stack Middle"</p>
-                </div>
                 <div className="about-techs">
                     <Picture className={'scale-on-hover'} name={'html5_icon'} type={'png'} alt={'HTML5'}/>
                     <Picture className={'scale-on-hover'} name={'sass_icon'} type={'png'} alt={'SASS'}/>

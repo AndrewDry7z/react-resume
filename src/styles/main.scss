@@ -1,4 +1,7 @@
 @import "variables";
+@import "animations";
+@import "themes";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $main-background;
+  //background-color: $dark-background;
   color: #FBFFF1;
   @media screen and (min-width:320px) and (max-width:768px) {
     text-align: center;
@@ -26,6 +29,10 @@ h2 {
   text-align: center;
 }
 
+button {
+  outline: none;
+}
+
 .max-width {
   max-width: 1150px;
   margin: auto;
@@ -40,8 +47,8 @@ h2 {
 }
 
 .background {
-  &-lighter {
-    background-color: #323640;
+  &-wrap {
+    background-color: $dark-wrapper-background;
     border-radius: 2.5%;
   }
 }
@@ -61,7 +68,7 @@ h2 {
   height: 500px;
   top: calc(50% - 250px);
   left: calc(50% - 300px);
-  background-color: $main-background;
+  background-color: $dark-background;
   border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;

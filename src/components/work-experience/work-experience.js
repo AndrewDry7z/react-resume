@@ -5,7 +5,7 @@ import MessageModalInit from "../common/modal-message";
 
 function WorkExperience() {
     return (
-        <div className="background-lighter">
+        <div className="background-wrap">
             <section className="work-experience max-width">
                 <h2>My work experience</h2>
                 <div className="work-experience-list">

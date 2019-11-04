@@ -8,9 +8,10 @@
     }
   }
   &-techs {
+    margin: auto;
     img {
       width: 64px;
-      margin: 5px;
+      margin: 5px 10px;
     }
     @media screen and (max-width: 768px) {
       margin-top: 40px;
