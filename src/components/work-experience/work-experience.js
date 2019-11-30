@@ -1,7 +1,6 @@
 import React from 'react';
 import './work-experience.scss';
 import WorkExperienceItem from "./work-experience-item";
-import MessageModalInit from "../common/modal-message";
 
 function WorkExperience() {
     return (
@@ -10,7 +9,13 @@ function WorkExperience() {
                 <h2>My work experience</h2>
                 <div className="work-experience-list">
                     <WorkExperienceItem
-                        terms={'November 2017 – Current'}
+                        terms={'November 2019 – Current'}
+                        position={'Full Stack Web Developer'}
+                        companyName={'Creative Soldiers, Ryazan'}
+                        description={'Web developer in new division of Email Soldiers, best e-mail marketing agency in Russia'}
+                    />
+                    <WorkExperienceItem
+                        terms={'November 2017 – September 2019'}
                         position={'Web Developer'}
                         companyName={'Sales Generator, Ryazan'}
                         description={'Frontend Developer (+ some backend) in SEO agency. Building search- and user-friendly responsive websites, landing pages, site modules, functional extension. Wordpress, Bitrix, MODX, Joomla.'}
@@ -33,13 +38,6 @@ function WorkExperience() {
                         companyName={'Medical Clinic, Ryazan'}
                         description={'Help Desk, Service Desk, LAN maintenance'}
                     />
-
-                </div>
-                <div className="work-experience-notice">
-                    <p className="work-experience-notice__text">
-                        Currently looking for job! If you have one:
-                    </p>
-                    <MessageModalInit isOpen={false}/>
                 </div>
             </section>
         </div>
