@@ -5,7 +5,7 @@ import Picture from "../common/picture";
 
 function Projects() {
 
-    let sliderSettings = {
+    const sliderSettings = {
         nav: false,
         mouseDrag: true,
         autoplay: true,
@@ -39,7 +39,7 @@ function Projects() {
 
     return (
         <section className="projects">
-            <h2>My portfolio</h2>
+            <h2>My portfolio (except NDA)</h2>
             <TinySlider settings={sliderSettings}>
                 <div className="projects-item">
                     <p className="projects-item__name">Sales Generator LP</p>

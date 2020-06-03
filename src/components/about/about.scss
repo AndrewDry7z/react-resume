@@ -10,8 +10,9 @@
   &-techs {
     margin: auto;
     img {
-      width: 64px;
+      max-height: 64px;
       margin: 5px 10px;
+      height: auto;
     }
     @media screen and (max-width: 768px) {
       margin-top: 40px;
